@@ -1,0 +1,114 @@
+header {
+    height: 15%;
+    max-height: 200px;
+    background-color:lavenderblush;
+    background-image: 
+    margin:0 0;
+    text-align: center;
+}
+ #nav-menu {
+     background-color: #efefef;
+     padding: 10px;
+     margin: 10px;
+     display: block;
+     overflow: auto;
+ }
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color:rgb(96, 64, 100);
+
+}
+.top {
+background-color:blueviolet;
+
+}
+img {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 50% 0;
+    
+   
+
+}
+div {
+    
+    border: red saddlebrown gray green;
+    display: flex-box;
+    flex-wrap: wrap;
+    
+
+}
+ul {
+    color: darkslategrey;
+    
+
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+p {
+    font-size: 1rem;
+    animation: 3s 1 alternate slidein;
+
+}
+a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+  
+.column{
+    display: inline-block;
+      width: 33%;
+    margin-right: -4px;
+    }
+   
+    .column:first-child {
+        margin-right: calc(4%-4px);
+        margin-bottom: 0;
+      }
+   
+ @media (min-width: 600px)  {
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 800px)  {
+    p {font-size: 1.5rem;
+
+    }
+}
+@media (min-width: 30em) and (max-width: 50em) {
+
+    .column {
+        display: block;
+          width: 80%;
+        margin-right: -4px;
+        align-content: center;
+        }
+}
+@media (min-width: 40em) and (max-width: 50em) {
+
+    .column {
+        display: inline-block;
+          width: 48%;
+        margin-right: -4px;
+        align-content: center;
+        }
+}
+      
+
+
+
