@@ -9,9 +9,10 @@ header {
  #nav-menu {
      background-color: #efefef;
      padding: 10px;
-     margin: 10px;
-     display: block;
+     margin: 10px 10px 10 px 10 px;
      overflow: auto;
+     display: flex;
+     
  }
 
 
