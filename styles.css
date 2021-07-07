@@ -6,20 +6,29 @@ header {
     margin:0 0;
     text-align: center;
 }
- #nav-menu {
+body{
+
+    font: 'Varela Round', sans-serif;
+}
+ nav {
      background-color: #efefef;
-     padding: 10px;
-     margin: 10px 10px 10 px 10 px;
-     overflow: auto;
-     display: flex;
-     
+        color: #494949;
+        padding: 15px;
+        margin: 5px;	
+        border-radius: 3px;
+        display: block;
+    }
+ .item {
+padding-left: 15px ;
+
  }
+   
 
 
 h1,
 h2,
 h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font: 'Varela Round', sans-serif;
     color:rgb(96, 64, 100);
 
 }
@@ -32,17 +41,8 @@ img {
     max-height: 40%;
     border-radius: 50% 0;
     
-   
-
 }
-div {
-    
-    border: red saddlebrown gray green;
-    display: flex-box;
-    flex-wrap: wrap;
-    
 
-}
 ul {
     color: darkslategrey;
     
@@ -60,6 +60,7 @@ ul {
     }
   }
 p {
+    font: 'Varela Round', sans-serif;
     font-size: 1rem;
     animation: 3s 1 alternate slidein;
 
