@@ -53,7 +53,7 @@ ul {
       width: 100%;
     }
   }
-p {
+h3 {
     font: 'Varela Round', sans-serif;
     font-size: 1rem;
     animation: 3s 1 alternate slidein;
