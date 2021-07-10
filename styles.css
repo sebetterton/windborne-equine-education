@@ -43,7 +43,11 @@ img {
     max-width: 40%;
     max-height: 40%;
     border-radius: 50% 0;
-    
+}
+img:hover {
+  -webkit-transform: rotate(320deg) ; /Chrome, Safari, Opera/
+  -moz-transform: rotate(320deg) ; /Firefox/
+  -ms-transform: rotate(320deg) skewY(320deg); / Internet Explorer /
 }
 
 ul {
