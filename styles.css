@@ -11,7 +11,7 @@ header {
 }
 body{
 
-    font: 'Varela Round', sans-serif;
+    font: 'Montserrat','Roboto';
 }
  nav {
      background-color: #efefef;
@@ -25,7 +25,7 @@ body{
 
 h2,
 h3 {
-    font: 'Varela Round', sans-serif;
+  font: 'Montserrat', 'Roboto';
     color:rgb(96, 64, 100);
 
 }
