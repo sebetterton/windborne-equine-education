@@ -10,8 +10,7 @@ header {
   
 }
 body{
-
-    font: 'Montserrat','Roboto';
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  nav {
      background-color: #efefef;
@@ -89,7 +88,10 @@ a {
         margin-right: calc(4%-4px);
         margin-bottom: 0;
       }
-   
+   form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   }
 
 
 @media (min-width: 30em) and (max-width: 50em) {
