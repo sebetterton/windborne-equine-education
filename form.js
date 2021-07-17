@@ -22,7 +22,7 @@ function validateEmail(email) {
     return re.test(email);
   }
   
-  function validate() {
+  function validateEmail() {
     const $result = $("#result");
     const email = $("#email").val();
     $result.text("");
