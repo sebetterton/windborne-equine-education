@@ -5,6 +5,9 @@
         <title>Windborne Equine Education</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles.css" type="text/css" rel="stylesheet"/>
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">"
     </head>
 
     <body>
@@ -16,11 +19,16 @@
     </header>
 
     <nav>
-        <ul class="container" id="nav-menu">
-            <li class="home item" id="home">Home</li>
-            <li class="facebook item" id="facebook"><a href="https://www.facebook.com/WindborneEquineEdu" target="_blank">Facebook</a></li>
-            <li class="email item" id="email"><a href="mailto:sebetterton@gmail.com" target="_blank">Email</a></li>
-        </ul>
+        <div class="container" id="nav-menu">
+            <ul id="myLinks">
+               <li><a href="#home" class="home item" id="home">Home</a></li>
+                <li><a class="facebook item" id="facebook" href="https://www.facebook.com/WindborneEquineEdu" target="_blank">Facebook</a></li>
+                <li><a class="email item" id="email" href="mailto:sebetterton@gmail.com" target="_blank">Email</li></a>
+            </ul>
+    </div>
+        <a href="form.js" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </nav>
 
 </section>

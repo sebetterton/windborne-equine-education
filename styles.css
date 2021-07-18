@@ -10,10 +10,12 @@ html {
 }
 
 body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 20px;
   padding: 20px;
   background-color: #efefef;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 
 header {
@@ -22,32 +24,36 @@ header {
     background-color:darkslategray;
     color: #efefef;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+
 }
 
- nav {
+nav {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+
+}
+
+ .nav-ul {
      background-color: #efefef;
         color: #1d3d23;
-        /* padding: 15px;
-        margin: 5px;	
-        border-radius: 3px;
-        display: flex; */
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+        list-style-type: none;
+        
     }
-
-h2
- {
-  /* font: 'Montserrat', 'Roboto';
-    color:rgb(96, 64, 100); */
-
-}
 
 .intro{
   border-width: 2px;
   border-style: groove;
   margin: 10px;
   padding: 15px 10px 10px 10px;
-  background-color: #1d5343;
+  background-color: darkslategrey;
   color: #efefef; 
 
 }
@@ -79,9 +85,8 @@ img:hover {
   }
 
 h3 {
-    font: 'Varela Round', sans-serif;
-    font-size: 1rem;
-    /* animation: 3s 1 alternate slidein; */
+    font-size: 1.5em;
+    animation: 3s 1 alternate slidein; 
     text-align: center;
 
 }
@@ -128,4 +133,7 @@ a {
 input {
   width: 100%;
   margin-bottom: 20px;
+}
+nav #myLinks {
+  display: none;
 }

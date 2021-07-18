@@ -17,24 +17,12 @@ else {
 
 document.write('<h3>' + greeting + '</h3>');
 
-function validateEmail(email) {
-    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
-  
-  function validateEmail() {
-    const $result = $("#result");
-    const email = $("#email").val();
-    $result.text("");
-  
-    if (validateEmail(email)) {
-      $result.text(email + " is valid :)");
-      $result.css("color", "green");
-    } else {
-      $result.text(email + " is not valid :(");
-      $result.css("color", "red");
-    }
-    return false;
-  }
-  
-  $("#validate").on("click", validate);
+}
