@@ -5,9 +5,10 @@
         <title>Windborne Equine Education</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles.css" type="text/css" rel="stylesheet"/>
-        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">"
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -165,55 +166,49 @@
 
 </div>
 
-<div class="horse-form-x">
+<div class="quiz">
 
-<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <script src="form.js"></script>
+
+<form id = "quiz" name="quiz" action="/action_page.php" onsubmit="return validateForm()" method="post">
     <fieldset>
-    <legend>Your Details:</legend>
-    <br />
-    <label>Name:
-        <input type="text" name="name"  max="100" required>
-    </label>
-    <br />
-    <label>Email: 
-        <input type="email" name="email" maxlength="100">
-    </label>
-    <br />
-    <p>
-        <label for="hear-about">
-            How did you hear about us?
-        </label>
-        <select name="referrer" id="hear-about">
-            <option value="google">Google</option>
-            <option vaule="friend">Friend</option>
-            <option value="facebook">Facebook</option>
-            <option value="other">Other</option>
-        </select>
-    </p>
-    <br />
-        <p>
-        <label for="comments">Comments:</label>
-        <br />
-        <textarea rows="5" cols="40" id="comments"></textarea>
-        </p>
-        <label>
-            <input type="checkbox" name="subscribe" checked="checked" />
-            Sign me up for email updates
-        </label>
-        <br />
-        <input type="submit" value="Submit" />
+    
+        <legend>Try our WEE fun facts quiz!</legend>
+
+    <p id = "question1"> Who is the oldest horse in our program?</p>
+    <input id = "textbox" type="text" name="question1">
+
+   <p id = "question2"> What year was Windborne Equine Education established as a 501(c)3?</p>
+   <input type = "radio" id = "mc" name ="question2" value = "1865">1865<br>
+   <input type = "radio" id = "mc" name ="question2" value = "2002">2002<br>
+   <input type = "radio" id = "mc" name ="question2" value = "2017">2017<br>
+   <input type = "radio" id = "mc" name ="question2" value = "2030">2030<br>
+
+   <p id = "question3"> What is Sundae's favorite snack?</p>
+   <input type = "radio" id = "mc" name ="question3" value = "Bananas">Bananas<br>
+   <input type = "radio" id = "mc" name ="question3" value = "Frogs">Frogs<br>
+   <input type = "radio" id = "mc" name ="question3" value = "Passion Fruit">Passion Fruit<br>
+   <input type = "radio" id = "mc" name ="question3" value = "Apples">Apples<br>
+
+   <p id = "question4"> Which horse loves doing groundwork and partner games?</p>
+   <input type = "radio" id = "mc" name ="question4" value = "Fiach">Fiach<br>
+   <input type = "radio" id = "mc" name ="question4" value = "Raven">Raven<br>
+   <input type = "radio" id = "mc" name ="question4" value = "Windy">Windy<br>
+   <input type = "radio" id = "mc" name ="question4" value = "Buttons">Buttons<br>
+
+   <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+    
+    
     </fieldset>
 </form>
 
+<div id = "after_submit">
+
+    <p id = "message"></p>
+    <p id = "number_correct"></p>
+
 </div>
 
-<div id="footer">
-
-    <p>&copy; Copyright 2021</p>
-
 </div>
-
-<script src="form.js"></script>
-
 </body>
 </html>
