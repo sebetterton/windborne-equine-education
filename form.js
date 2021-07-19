@@ -44,7 +44,7 @@ function check(){
       var range; 
 
         if (correct < 1) {
-          range = 2;
+          range = 3;
         }
 
         if (correct > 1 && correct < 3) {
@@ -52,6 +52,9 @@ function check(){
         }
         if (correct > 3) {
           range = 0;
+        }
+        if (correct == 3) {
+          range = 1;
         }
   document.getElementById("after_submit").style.visibility = "visible";
 
