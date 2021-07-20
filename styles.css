@@ -46,6 +46,7 @@ nav {
         justify-content: center;
         padding: 0; 
         list-style-type: none;
+        color: white;
         
     }
 
@@ -64,7 +65,7 @@ img {
   max-width: 600px;
   height: auto;
   max-height: 100%;
-  border-radius: 50% 0%;
+  
 }
 
 img:hover {
@@ -107,11 +108,12 @@ a {
   width: 100%;
 }
 
-.horse--item-photo {
+ .horse--item-photo {
   text-align: center;
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
+  border-radius: 50% 0%; 
 }
 
 @media screen and (min-width: 800px) {
@@ -136,9 +138,8 @@ input {
   margin-bottom: 20px;
 }
 
-/* .horse-form-x {
+  form {
   align-items:flex-start;
-}*/
 
 #after_submit {
   visibility: hidden;

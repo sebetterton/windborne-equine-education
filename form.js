@@ -39,26 +39,30 @@ function check(){
         correct++;
       }
 
-      var messages = ["Great job!", "Good try!", "Halfway there!", "Try again!"]
+      var messages = ["Great job!", "You can do better.", "Halfway there!", "Try again!", "So close to perfection!"];
+      var pictures = ["images/winner.gif", "images/1correct.gif", "images/meh.gif", "images/loser.gif", "images/3-correct.gif"];
 
       var range; 
 
         if (correct < 1) {
           range = 3;
         }
+        if (correct == 1){
+          range = 1;
+        }
 
-        if (correct > 1 && correct < 3) {
+        if (correct == 2) {
           range = 2;
         }
-        if (correct > 3) {
+        if (correct == 4) {
           range = 0;
         }
         if (correct == 3) {
-          range = 1;
+          range = 4;
         }
   document.getElementById("after_submit").style.visibility = "visible";
 
   document.getElementById("message").innerHTML = messages[range];
   document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
-
+  document.getElementById("picture").src = pictures[range];
 }
