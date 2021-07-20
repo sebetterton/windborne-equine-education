@@ -20,12 +20,12 @@
     </header>
 
     <nav>
-        <div class="container" id="nav-menu">
-            <ul id="myLinks">
-               <li><a href="#home" class="home item" id="home">Home</a></li>
-                <li><a class="facebook item" id="facebook" href="https://www.facebook.com/WindborneEquineEdu" target="_blank">Facebook</a></li>
-                <li><a class="email item" id="email" href="mailto:sebetterton@gmail.com" target="_blank">Email</li></a>
-            </ul>
+        <div class="topnav" id="nav-menu">
+            
+                <a href="#home" class="home item" id="home">Home</a>
+                <a class="facebook item" id="facebook" href="https://www.facebook.com/WindborneEquineEdu" target="_blank">Facebook</a>
+                <a class="email item" id="email" href="mailto:sebetterton@gmail.com" target="_blank">Email</a>
+            
     </div>
         <a href="form.js" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -166,48 +166,49 @@
 
 </div>
 
-<div class="quiz">
+        <div class="quiz">
 
-<form id = "quiz" name="quiz" action="/action_page.php" onsubmit="return validateForm()" method="post">
-    <fieldset>
-    
-        <legend>Try our WEE fun facts quiz!</legend>
+            <form id = "quiz" name="quiz" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                 <fieldset>
+            
+                        <legend>Try our WEE fun facts quiz!</legend>
 
-    <p id = "question1"> Who is the oldest horse in our program?</p>
-    <input id = "textbox" type="text" name="question1">
+            <p id = "question1"> Who is the oldest horse in our program?</p>
+            <input id = "textbox" type="text" name="question1">
 
-   <p id = "question2"> What year was Windborne Equine Education established as a 501(c)3?</p>
-   <input type = "radio" id = "mc" name ="question2" value = "1865">1865<br>
-   <input type = "radio" id = "mc" name ="question2" value = "2002">2002<br>
-   <input type = "radio" id = "mc" name ="question2" value = "2017">2017<br>
-   <input type = "radio" id = "mc" name ="question2" value = "2030">2030<br>
+            <p id = "question2"> What year was Windborne Equine Education established as a 501(c)3?</p>
+                <input type = "radio" id = "mc" name ="question2" value = "1865">1865<br>
+                <input type = "radio" id = "mc" name ="question2" value = "2002">2002<br>
+                <input type = "radio" id = "mc" name ="question2" value = "2017">2017<br>
+                <input type = "radio" id = "mc" name ="question2" value = "2030">2030<br>
 
-   <p id = "question3"> What is Sundae's favorite snack?</p>
-   <input type = "radio" id = "mc" name ="question3" value = "Bananas">Bananas<br>
-   <input type = "radio" id = "mc" name ="question3" value = "Frogs">Frogs<br>
-   <input type = "radio" id = "mc" name ="question3" value = "Passion Fruit">Passion Fruit<br>
-   <input type = "radio" id = "mc" name ="question3" value = "Apples">Apples<br>
+            <p id = "question3"> What is Sundae's favorite snack?</p>
+                <input type = "radio" id = "mc" name ="question3" value = "Bananas">Bananas<br>
+                <input type = "radio" id = "mc" name ="question3" value = "Frogs">Frogs<br>
+                <input type = "radio" id = "mc" name ="question3" value = "Passion Fruit">Passion Fruit<br>
+                <input type = "radio" id = "mc" name ="question3" value = "Apples">Apples<br>
 
-   <p id = "question4"> Which horse loves doing groundwork and partner games?</p>
-   <input type = "radio" id = "mc" name ="question4" value = "Fiach">Fiach<br>
-   <input type = "radio" id = "mc" name ="question4" value = "Raven">Raven<br>
-   <input type = "radio" id = "mc" name ="question4" value = "Windy">Windy<br>
-   <input type = "radio" id = "mc" name ="question4" value = "Buttons">Buttons<br>
+            <p id = "question4"> Which horse loves doing groundwork and partner games?</p>
+                <input type = "radio" id = "mc" name ="question4" value = "Fiach">Fiach<br>
+                <input type = "radio" id = "mc" name ="question4" value = "Raven">Raven<br>
+                <input type = "radio" id = "mc" name ="question4" value = "Windy">Windy<br>
+                <input type = "radio" id = "mc" name ="question4" value = "Buttons">Buttons<br>
 
-   <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-    
-    
-    </fieldset>
-</form>
+                  <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+            
+            
+            </fieldset>
+        
+        </form>
 
-<div id = "after_submit">
+        <div id = "after_submit">
 
-    <p id = "message"></p>
-    <p id = "number_correct"></p>
-    <img id = "picture">
+            <p id = "message"></p>
+            <p id = "number_correct"></p>
+            <img id = "picture">
 
-</div>
+        </div>
 
-</div>
-</body>
-</html>
+        </div>
+        </body>
+        </html>
