@@ -17,6 +17,15 @@ else {
 
 document.write('<h3>' + greeting + '</h3>');
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 function check(){
 
   var question1 = document.quiz.question1.value;

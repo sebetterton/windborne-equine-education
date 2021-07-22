@@ -51,10 +51,9 @@ header {
 }
 
 .topnav a.active {
-
   color: white;
 }
-
+ 
 .intro{
   border-width: 2px;
   border-style: groove;
@@ -62,7 +61,6 @@ header {
   padding: 15px 10px 10px 10px;
   background-color: darkslategrey;
   color: #efefef; 
-
 }
 
 img {
@@ -70,13 +68,10 @@ img {
   max-width: 600px;
   height: auto;
   max-height: 100%;
-  
 }
 
-img:hover {
-  -webkit-transform: rotate(320deg) ; /Chrome, Safari, Opera/
-  -moz-transform: rotate(320deg) ; /Firefox/
-  -ms-transform: rotate(320deg) skewY(320deg); / Internet Explorer /
+.horse--item-photo:hover {
+  opacity: 0.3;
 }
 
 @keyframes slidein {
@@ -121,26 +116,9 @@ a {
   border-radius: 50% 0%; 
 }
 
-@media screen and (min-width: 800px) {
-
-  .horses-x {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .horse--item {
-    width: calc(28% - 20px);
-    margin: 20px;
-  }
 .quiz {
-  margin-left: 60px;
-  width: 80%;
+  width: 100%;
 }
-}
-
 input {
   margin-bottom: 20px;
 }
@@ -160,12 +138,33 @@ input {
 .quiz {
 background: darkslategrey;
 color: white;
-padding: 10px 20px;
+padding: 0px 0px 10px 0px;
 width: 100%;
 border-radius: 20px; 
 }
 
-#button {
-float: center;
+@media screen and (min-width: 800px) {
+
+  .horses-x {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .horse--item {
+    width: calc(40% - 20px);
+    margin: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  
+  .horse--item {
+    width: calc(28% - 20px);
+
+  }
 
 }
