@@ -9,8 +9,9 @@
 .horses-x,
 .quiz,
 footer {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 html {
@@ -62,13 +63,14 @@ header {
   color: white;
 }
  
-.intro{
+.intro {
   border-width: 2px;
   border-style: groove;
-  margin: 10px;
+  margin: 20px auto;
   padding: 15px 10px 10px 10px;
   background-color: darkslategrey;
   color: #efefef; 
+  
 }
 
 img {
@@ -153,7 +155,7 @@ border-radius: 20px;
 
 @media screen and (min-width: 800px) {
 
-  .horses-x {
+  .horses-x  {
     display: flex;
     flex-direction: row;
     align-items: center;
